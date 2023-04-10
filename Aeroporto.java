@@ -1,3 +1,8 @@
+// Cada Aeroporto possui um número variável de pistas, terminais e hangares, mas deve, obrigatoriamente,
+// possuir ao menos uma pista e uma torre de controle. Cada avião, aeroporto, pista, terminal e torre de controle
+// devem possuir um número único de identificação para que possa haver o tráfego aéreo
+
+// Cada aeroporto possui Radares que fazem parte da torre de controle.
 
 public class Aeroporto {
     private int id;

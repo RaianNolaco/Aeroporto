@@ -1,3 +1,7 @@
+// • A administração deve manter o cadastro de vôos e pode também localizar os aviões que estiverem em solo,
+// no aeroporto.
+
+
 public class Administracao {
     private Voo[] listaDeVoos;
     private Aeronave aeronavesNoChao;

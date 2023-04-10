@@ -1,3 +1,8 @@
+// Na torre de controle, deve existir ao menos um controlador, sendo que em aeroportos maiores e mais
+// movimentados, o número pode ser muito maior.
+
+// O sistema solicita que o objeto Vôo informe os dados necessários
+
 
 public class TorreDeControle {
     private Radar radar;
