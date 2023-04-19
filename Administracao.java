@@ -4,13 +4,13 @@
 
 public class Administracao {
     private Voo[] listaDeVoos;
-    private Aeronave aeronavesNoChao;
-    private Aeronave aeronavesEmVoo;
+    private Aeronave[] aeronavesNoChao;
 
-    public Administracao(Voo[] listaDeVoos, Aeronave aeronavesNoChao, Aeronave aeronavesEmVoo) {
+
+
+    public Administracao(Voo[] listaDeVoos, Aeronave[] aeronavesNoChao) {
         this.listaDeVoos = listaDeVoos;
         this.aeronavesNoChao = aeronavesNoChao;
-        this.aeronavesEmVoo = aeronavesEmVoo;
     }
 
     public Voo[] getListaDeVoos() {
@@ -21,20 +21,13 @@ public class Administracao {
         this.listaDeVoos = listaDeVoos;
     }
 
-    public Aeronave getAeronavesNoChao() {
+    public Aeronave[] getAeronavesNoChao() {
         return aeronavesNoChao;
     }
 
-    public void setAeronavesNoChao(Aeronave aeronavesNoChao) {
+    public void setAeronavesNoChao(Aeronave[] aeronavesNoChao) {
         this.aeronavesNoChao = aeronavesNoChao;
     }
 
-    public Aeronave getAeronavesEmVoo() {
-        return aeronavesEmVoo;
-    }
-
-    public void setAeronavesEmVoo(Aeronave aeronavesEmVoo) {
-        this.aeronavesEmVoo = aeronavesEmVoo;
-    }
 
 }
