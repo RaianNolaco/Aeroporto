@@ -6,8 +6,6 @@ public class Administracao {
     private Voo[] listaDeVoos;
     private Aeronave[] aeronavesNoChao;
 
-
-
     public Administracao(Voo[] listaDeVoos, Aeronave[] aeronavesNoChao) {
         this.listaDeVoos = listaDeVoos;
         this.aeronavesNoChao = aeronavesNoChao;
