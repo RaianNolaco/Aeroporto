@@ -26,6 +26,4 @@ public class Administracao {
     public void setAeronavesNoChao(Aeronave[] aeronavesNoChao) {
         this.aeronavesNoChao = aeronavesNoChao;
     }
-
-
 }

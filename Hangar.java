@@ -11,5 +11,4 @@ public abstract class Hangar {
     public void setAeronave(Aeronave aeronave) {
         this.aeronave = aeronave;
     }
-
 }
