@@ -36,4 +36,8 @@ public abstract class Aeronave {
         this.motor = motor;
     }
 
+    public double calcularDistanciaPossivel(){
+        return this.capacidadeCombustivel/this.motor.getConsumoCombustivelPorKM();
+    }
+
 }

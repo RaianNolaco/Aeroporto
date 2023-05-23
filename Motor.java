@@ -1,6 +1,6 @@
 
 public class Motor {
-    private double consumoCombustivelPorKM;
+    private double consumoCombustivelPorKM; //L/KM
 
     public void setConsumoCombustivelPorKM(double consumoCombustivelPorKM) {
         this.consumoCombustivelPorKM = consumoCombustivelPorKM;
