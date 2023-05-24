@@ -1,13 +1,23 @@
+import java.util.Date;
 public class HangarManutencao extends Hangar {
 
-    private String tripulacao;
+    private String mecanico;
 
-    public String getTripulacao() {
-        return tripulacao;
+    public String getMecanico() {
+        return mecanico;
     }
 
-    public void setTripulacao(String tripulacao) {
-        this.tripulacao = tripulacao;
+    public void setTripulacao(String mecanico) {
+        this.mecanico = mecanico;
     }
 
+    public void realizarManutencao(Aeronave aeronave) {
+        
+    }
+
+    public void agendarManutencao(Aeronave aeronave, Date data) {
+    
+    }
 }
+
+ 

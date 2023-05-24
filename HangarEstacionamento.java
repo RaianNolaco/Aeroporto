@@ -9,8 +9,7 @@ public class HangarEstacionamento extends Hangar {
     public void setOcupado(boolean ocupado) {
         this.ocupado = ocupado;
     }
-
-
     
 }
+  
 
