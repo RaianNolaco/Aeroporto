@@ -16,27 +16,19 @@
 // Ocorre, entretanto, que as condições climáticas e outros fatores físicos podem influenciar no tipo de pista a
 // ser utilizada.
 
-
-
-
 public class Voo {
     private int id;
     private Aeroporto origem;
     private Aeroporto destino;
     private Aeronave aeronave;
     private Tripulacao tripulacao;
-    private Pista pistaDeDecolagem;
-    private Pista pistaDePouso;
 
-    public Voo(int id, Aeroporto origem, Aeroporto destino, Aeronave aeronave, Tripulacao tripulacao,
-            Pista pistaDeDecolagem, Pista pistaDePouso) {
+    public Voo(int id, Aeroporto origem, Aeroporto destino, Aeronave aeronave, Tripulacao tripulacao) {
         this.id = id;
         this.origem = origem;
         this.destino = destino;
         this.aeronave = aeronave;
         this.tripulacao = tripulacao;
-        this.pistaDeDecolagem = pistaDeDecolagem;
-        this.pistaDePouso = pistaDePouso;
     }
 
     public int getId() {
@@ -78,22 +70,4 @@ public class Voo {
     public void setTripulacao(Tripulacao tripulacao) {
         this.tripulacao = tripulacao;
     }
-
-    public Pista getPistaDePouso() {
-        return pistaDePouso;
-    }
-
-    public void setPistaDePouso(Pista pistaDePouso) {
-        this.pistaDePouso = pistaDePouso;
-    }
-
-    public Pista getPistaDeDecolagem() {
-        return pistaDeDecolagem;
-    }
-
-    public void setPistaDeDecolagem(Pista pistaDeDecolagem) {
-        this.pistaDeDecolagem = pistaDeDecolagem;
-    }
-
-
 }
