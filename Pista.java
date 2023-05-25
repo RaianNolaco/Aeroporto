@@ -26,10 +26,11 @@ public class Pista {
     }
 
     public void mudarEstado() {
-        if(this.livre){
+
+        if (this.livre) {
             this.livre = false;
-        }else{
+        } else {
             this.livre = true;
         }
-    }                                     
+    }
 }
