@@ -1,23 +1,5 @@
 package Aeronave;
 
-// um vôo é sempre entre dois aeroportos(origem e destino)
-
-// Cada vôo possui um número que o identifica.
-
-// Vôos transportam passageiros e todos os vôos são registrados numa base central que pode ser acessada por
-// todos os aeroportos.
-
-// Nos pousos, Caso o aeroporto não possua condições para receber o vôo, o controlador pode solicitar uma
-// relação de aeroportos abertos e dirigir o vôo para um aeroporto alternativo.
-
-// Faz parte dos atributos do objeto Vôo as informações do tipo de avião. Assim sendo o objeto solicita ao
-// objeto Avião as características físicas da aeronave.
-// As informações são repassadas à interface que, de posse desses dados, solicita ao objeto Pista as
-// informações sobre a pista adequada ao tipo de aeronave.
-
-// Ocorre, entretanto, que as condições climáticas e outros fatores físicos podem influenciar no tipo de pista a
-// ser utilizada.
-
 import Aeroporto.Aeroporto;
 import Pessoas.Tripulacao;
 

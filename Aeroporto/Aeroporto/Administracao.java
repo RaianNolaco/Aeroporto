@@ -1,10 +1,6 @@
 package Aeroporto;
-// • A administração deve manter o cadastro de vôos e pode também localizar os aviões que estiverem em solo,
 
 import java.util.ArrayList;
-
-// no aeroporto.
-
 import Aeronave.Aeronave;
 import Aeronave.Voo;
 

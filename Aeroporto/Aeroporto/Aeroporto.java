@@ -1,14 +1,10 @@
 package Aeroporto;
-// Cada Aeroporto possui um número variável de pistas, terminais e hangares, mas deve, obrigatoriamente,
 
 import java.util.ArrayList;
-
 import Instalacoes.Hangar;
 import Instalacoes.Pista;
 import Instalacoes.Terminal;
 import Instalacoes.TorreDeControle;
-
-// Cada aeroporto possui Radares que fazem parte da torre de controle.
 
 public class Aeroporto {
     private int id;

@@ -1,10 +1,5 @@
 package Instalacoes;
 
-// Desse modo, o objeto Pista necessita informações do Radar para que seja escolhida a pista adequada
-
-// • As informações obtidas são repassadas à interface e o controlador informa ao piloto os procedimentos de
-// pouso
-
 public class Pista {
     private int id;
     private boolean livre;

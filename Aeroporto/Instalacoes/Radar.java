@@ -1,7 +1,6 @@
 package Instalacoes;
 
 import java.util.ArrayList;
-
 import Aeronave.Voo;
 
 public class Radar {

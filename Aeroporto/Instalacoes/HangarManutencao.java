@@ -1,7 +1,6 @@
 package Instalacoes;
 
 import java.util.Date;
-
 import Aeronave.Aeronave;
 import Pessoas.Mecanico;
 
