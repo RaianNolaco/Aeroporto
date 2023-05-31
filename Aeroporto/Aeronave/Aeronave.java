@@ -10,12 +10,40 @@ import java.util.Date;
 
 import Pessoas.Tripulacao;
 
-public class Aeronave {
+public abstract class Aeronave {
 
     private Tripulacao tripulacao;
     private double capacidadeCombustivel;
     private Motor motor;
     private boolean emManutencao;
+    private String modelo;
+    private boolean isAsaFixa;
+
+    public Aeronave(Tripulacao tripulacao, double capacidadeCombustivel, Motor motor, boolean emManutencao,
+            String modelo, boolean isAsaFixa) {
+        this.tripulacao = tripulacao;
+        this.capacidadeCombustivel = capacidadeCombustivel;
+        this.motor = motor;
+        this.emManutencao = emManutencao;
+        this.modelo = modelo;
+        this.isAsaFixa = isAsaFixa;
+    }
+
+    public boolean isAsaFixa() {
+        return isAsaFixa;
+    }
+
+    public void setAsaFixa(boolean isAsaFixa) {
+        this.isAsaFixa = isAsaFixa;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
 
     public Tripulacao getTripulacao() {
         return tripulacao;
@@ -54,6 +82,11 @@ public class Aeronave {
     }
 
     public void setDataAgendamento(Date data) {
+    }
+
+    public String infoAeronave() {
+
+        return null;
     }
 
 }

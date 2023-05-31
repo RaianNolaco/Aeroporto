@@ -1,7 +1,7 @@
 package Aeronave;
 
 public class Motor {
-    private double consumoCombustivelPorKM; // L/KM
+    private double consumoCombustivelPorKM;
 
     public void setConsumoCombustivelPorKM(double consumoCombustivelPorKM) {
         this.consumoCombustivelPorKM = consumoCombustivelPorKM;

@@ -1,31 +1,28 @@
 package Intalacoes;
 // Na torre de controle, deve existir ao menos um controlador, sendo que em aeroportos maiores e mais
 
-// movimentados, o número pode ser muito maior.
-
-import Aeronave.Radar;
 import Aeronave.Voo;
 import Pessoas.Controlador;
 
 // O sistema solicita que o objeto Vôo informe os dados necessários
 
 public class TorreDeControle {
-    private Radar radar;
+    private Radar[] radares;
     private Controlador[] controladores;
     private Voo[] listaDeEspera;
 
-    public TorreDeControle(Radar radar, Controlador[] controladores, Voo[] listaDeEspera) {
-        this.radar = radar;
+    public TorreDeControle(Radar[] radares, Controlador[] controladores, Voo[] listaDeEspera) {
+        this.radares = radares;
         this.controladores = controladores;
         this.listaDeEspera = listaDeEspera;
     }
 
-    public Radar getRadar() {
-        return radar;
+    public Radar[] getRadar() {
+        return radares;
     }
 
-    public void setRadar(Radar radar) {
-        this.radar = radar;
+    public void setRadar(Radar[] radares) {
+        this.radares = radares;
     }
 
     public Controlador[] getControladores() {
