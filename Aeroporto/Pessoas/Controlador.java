@@ -1,7 +1,7 @@
 package Pessoas;
 // O controlador solicita ao sistema que informe os procedimentos de pouso para o vôo cujo número foi
 
-import Intalacoes.TorreDeControle;
+import Instalacoes.TorreDeControle;
 
 // fornecido pelo piloto.
 
@@ -32,7 +32,7 @@ public class Controlador extends Pessoa {
     public void enviarParaPiloto(int idPiloto, String procedimento) {
     }
 
-    public void buscarAeroportos() {
+    public void buscarAeroportosDisponiveis() {
     }
 
 }

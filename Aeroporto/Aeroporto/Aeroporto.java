@@ -3,13 +3,10 @@ package Aeroporto;
 
 import java.util.ArrayList;
 
-// possuir ao menos uma pista e uma torre de controle. Cada avião, aeroporto, pista, terminal e torre de controle
-// devem possuir um número único de identificação para que possa haver o tráfego aéreo
-
-import Intalacoes.Hangar;
-import Intalacoes.Pista;
-import Intalacoes.Terminal;
-import Intalacoes.TorreDeControle;
+import Instalacoes.Hangar;
+import Instalacoes.Pista;
+import Instalacoes.Terminal;
+import Instalacoes.TorreDeControle;
 
 // Cada aeroporto possui Radares que fazem parte da torre de controle.
 
