@@ -1,7 +1,7 @@
 package Pessoas;
 // O controlador solicita ao sistema que informe os procedimentos de pouso para o vôo cujo número foi
 
-import Aeroporto.Aeroporto.TorreDeControle;
+import Intalacoes.TorreDeControle;
 
 // fornecido pelo piloto.
 

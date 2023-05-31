@@ -1,18 +1,20 @@
 package Intalacoes;
 
+import java.util.ArrayList;
+
 import Aeronave.Voo;
 
 public class Radar {
-    private Voo[] voosRastreados;
+    private ArrayList<Voo> voosRastreados;
 
     public Radar() {
     }
 
-    public Voo[] getVoosRastreados() {
+    public ArrayList<Voo> getVoosRastreados() {
         return voosRastreados;
     }
 
-    public void setVoosRastreados(Voo[] voosRastreados) {
+    public void setVoosRastreados(ArrayList<Voo> voosRastreados) {
         this.voosRastreados = voosRastreados;
     }
 

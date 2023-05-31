@@ -1,20 +1,22 @@
 package Pessoas;
 
+import java.util.ArrayList;
+
 public class Tripulacao {
     private Piloto piloto;
     private Piloto CoPiloto;
-    private Tripulante[] passageiros;
+    private ArrayList<Tripulante> passageiros;
 
     public Tripulacao(Piloto piloto) {
         this.piloto = piloto;
     }
 
-    public Tripulacao(Piloto piloto, Tripulante[] passageiros) {
+    public Tripulacao(Piloto piloto, ArrayList<Tripulante> passageiros) {
         this.piloto = piloto;
         this.passageiros = passageiros;
     }
 
-    public Tripulacao(Piloto piloto, Piloto coPiloto, Tripulante[] passageiros) {
+    public Tripulacao(Piloto piloto, Piloto coPiloto, ArrayList<Tripulante> passageiros) {
         this.piloto = piloto;
         CoPiloto = coPiloto;
         this.passageiros = passageiros;
@@ -36,11 +38,11 @@ public class Tripulacao {
         CoPiloto = coPiloto;
     }
 
-    public Tripulante[] getPassageiros() {
+    public ArrayList<Tripulante> getPassageiros() {
         return passageiros;
     }
 
-    public void setPassageiros(Tripulante[] passageiros) {
+    public void setPassageiros(ArrayList<Tripulante> passageiros) {
         this.passageiros = passageiros;
     }
 

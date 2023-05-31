@@ -1,6 +1,8 @@
 package Aeroporto;
 // Cada Aeroporto possui um número variável de pistas, terminais e hangares, mas deve, obrigatoriamente,
 
+import java.util.ArrayList;
+
 // possuir ao menos uma pista e uma torre de controle. Cada avião, aeroporto, pista, terminal e torre de controle
 // devem possuir um número único de identificação para que possa haver o tráfego aéreo
 
@@ -13,9 +15,9 @@ import Intalacoes.TorreDeControle;
 
 public class Aeroporto {
     private int id;
-    private Pista[] pistas;
-    private Hangar[] hangares;
-    private Terminal[] terminais;
+    private ArrayList<Pista> pistas;
+    private ArrayList<Hangar> hangares;
+    private ArrayList<Terminal> terminais;
     private TorreDeControle torreDeControle;
     private String clima;
 
@@ -27,27 +29,27 @@ public class Aeroporto {
         this.id = id;
     }
 
-    public Pista[] getPistas() {
+    public ArrayList<Pista> getPistas() {
         return pistas;
     }
 
-    public void setPistas(Pista[] pistas) {
+    public void setPistas(ArrayList<Pista> pistas) {
         this.pistas = pistas;
     }
 
-    public Hangar[] getHangares() {
+    public ArrayList<Hangar> getHangares() {
         return hangares;
     }
 
-    public void setHangares(Hangar[] hangares) {
+    public void setHangares(ArrayList<Hangar> hangares) {
         this.hangares = hangares;
     }
 
-    public Terminal[] getTerminais() {
+    public ArrayList<Terminal> getTerminais() {
         return terminais;
     }
 
-    public void setTerminais(Terminal[] terminais) {
+    public void setTerminais(ArrayList<Terminal> terminais) {
         this.terminais = terminais;
     }
 

@@ -1,6 +1,7 @@
 package Pessoas;
 
-import Aeroporto.Aeroporto.Voo;
+import Aeronave.Voo;
+
 public class Tripulante extends Pessoa {
 
     private Voo voo;
