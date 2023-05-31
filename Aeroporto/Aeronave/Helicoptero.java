@@ -1,6 +1,7 @@
 package Aeronave;
 
-import Intalacoes.Pista;
+import Instalacoes.Pista;
+import Pessoas.Mecanico;
 import Pessoas.Piloto;
 import Pessoas.Tripulacao;
 
@@ -11,8 +12,10 @@ public class Helicoptero extends Aeronave {
     private Piloto piloto;
 
     public Helicoptero(Tripulacao tripulacao, double capacidadeCombustivel, Motor motor, boolean emManutencao,
-            String modelo, boolean isAsaFixa, boolean rotoresGirando, Pista heliporto, Piloto piloto, Piloto coPiloto) {
-        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa);
+            String modelo, boolean isAsaFixa, String cor, Mecanico ultimoMecanicoResponsavel, boolean rotoresGirando,
+            Pista heliporto, Piloto piloto, Piloto coPiloto) {
+        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa, cor,
+                ultimoMecanicoResponsavel);
         this.rotoresGirando = rotoresGirando;
         this.heliporto = heliporto;
         this.piloto = piloto;
@@ -20,11 +23,14 @@ public class Helicoptero extends Aeronave {
     }
 
     public Helicoptero(Tripulacao tripulacao, double capacidadeCombustivel, Motor motor, boolean emManutencao,
-            String modelo, boolean isAsaFixa, boolean rotoresGirando, Pista heliporto, Piloto piloto) {
-        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa);
+            String modelo, boolean isAsaFixa, String cor, Mecanico ultimoMecanicoResponsavel, boolean rotoresGirando,
+            Pista heliporto, Piloto piloto) {
+        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa, cor,
+                ultimoMecanicoResponsavel);
         this.rotoresGirando = rotoresGirando;
         this.heliporto = heliporto;
         this.piloto = piloto;
+
     }
 
     public Piloto getPiloto() {

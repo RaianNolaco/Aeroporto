@@ -10,6 +10,7 @@ import Aeronave.Voo;
 
 public class Administracao {
     private ArrayList<Voo> listaDeVoos;
+    private ArrayList<Aeronave> aeronavesEmVoo;
     private ArrayList<Aeronave> aeronavesNoChao;
 
     public Administracao(ArrayList<Voo> listaDeVoos, ArrayList<Aeronave> aeronavesNoChao) {
@@ -40,6 +41,19 @@ public class Administracao {
     public void registraAeronave(Aeronave aeronave) {
         this.aeronavesNoChao.add(aeronave);
 
+    }
+
+    public void registrarAeronaveEmVoo(Aeronave aeronave) {
+        this.aeronavesEmVoo.add(aeronave);
+
+    }
+
+    public ArrayList<Aeronave> getAeronavesEmVoo() {
+        return aeronavesEmVoo;
+    }
+
+    public void setAeronavesEmVoo(ArrayList<Aeronave> aeronavesEmVoo) {
+        this.aeronavesEmVoo = aeronavesEmVoo;
     }
 
 }

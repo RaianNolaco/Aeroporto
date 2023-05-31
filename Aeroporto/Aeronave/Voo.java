@@ -36,6 +36,10 @@ public class Voo {
         this.tripulacao = tripulacao;
     }
 
+    public String buscarInfoAeronave() {
+        return aeronave.infoAeronave();
+    }
+
     public int getId() {
         return id;
     }

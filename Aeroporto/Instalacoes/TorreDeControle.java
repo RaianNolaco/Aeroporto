@@ -1,12 +1,8 @@
-package Intalacoes;
-// Na torre de controle, deve existir ao menos um controlador, sendo que em aeroportos maiores e mais
+package Instalacoes;
 
 import java.util.ArrayList;
-
 import Aeronave.Voo;
 import Pessoas.Controlador;
-
-// O sistema solicita que o objeto Vôo informe os dados necessários
 
 public class TorreDeControle {
     private ArrayList<Radar> radares;
@@ -18,6 +14,18 @@ public class TorreDeControle {
         this.radares = radares;
         this.controladores = controladores;
         this.listaDeEspera = listaDeEspera;
+    }
+
+    public void adicionarControlador(Controlador controlador) {
+        controladores.add(controlador);
+    }
+
+    public void adicionarRadar(Radar radar) {
+        radares.add(radar);
+    }
+
+    public void adicionarVoo(Voo voo) {
+        listaDeEspera.add(voo);
     }
 
     public ArrayList<Radar> getRadar() {

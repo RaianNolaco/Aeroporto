@@ -1,6 +1,7 @@
 package Aeronave;
 
-import Intalacoes.Pista;
+import Instalacoes.Pista;
+import Pessoas.Mecanico;
 import Pessoas.Piloto;
 import Pessoas.Tripulacao;
 
@@ -12,8 +13,10 @@ public class Aviao extends Aeronave {
     private Pista decolagem;
 
     public Aviao(Tripulacao tripulacao, double capacidadeCombustivel, Motor motor, boolean emManutencao, String modelo,
-            boolean isAsaFixa, Piloto piloto, Piloto coPiloto, Pista pouso, Pista decolagem) {
-        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa);
+            boolean isAsaFixa, String cor, Mecanico ultimoMecanicoResponsavel, Piloto piloto, Piloto coPiloto,
+            Pista pouso, Pista decolagem) {
+        super(tripulacao, capacidadeCombustivel, motor, emManutencao, modelo, isAsaFixa, cor,
+                ultimoMecanicoResponsavel);
         this.piloto = piloto;
         this.coPiloto = coPiloto;
         this.pouso = pouso;

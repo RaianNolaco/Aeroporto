@@ -8,6 +8,7 @@ package Aeronave;
 
 import java.util.Date;
 
+import Pessoas.Mecanico;
 import Pessoas.Tripulacao;
 
 public abstract class Aeronave {
@@ -18,15 +19,20 @@ public abstract class Aeronave {
     private boolean emManutencao;
     private String modelo;
     private boolean isAsaFixa;
+    private String cor;
+    private Mecanico ultimoMecanicoResponsavel;
+    private int capacidadePassageiros;
 
     public Aeronave(Tripulacao tripulacao, double capacidadeCombustivel, Motor motor, boolean emManutencao,
-            String modelo, boolean isAsaFixa) {
+            String modelo, boolean isAsaFixa, String cor, Mecanico ultimoMecanicoResponsavel) {
         this.tripulacao = tripulacao;
         this.capacidadeCombustivel = capacidadeCombustivel;
         this.motor = motor;
         this.emManutencao = emManutencao;
         this.modelo = modelo;
         this.isAsaFixa = isAsaFixa;
+        this.cor = cor;
+        this.ultimoMecanicoResponsavel = ultimoMecanicoResponsavel;
     }
 
     public boolean isAsaFixa() {
@@ -87,6 +93,42 @@ public abstract class Aeronave {
     public String infoAeronave() {
 
         return null;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public Mecanico getUltimoMecanicoResponsavel() {
+        return ultimoMecanicoResponsavel;
+    }
+
+    public void setUltimoMecanicoResponsavel(Mecanico ultimoMecanicoResponsavel) {
+        this.ultimoMecanicoResponsavel = ultimoMecanicoResponsavel;
+    }
+
+    public int getCapacidadePassageiros() {
+        return capacidadePassageiros;
+    }
+
+    public void setCapacidadePassageiros(int capacidadePassageiros) {
+        this.capacidadePassageiros = capacidadePassageiros;
+    }
+
+    public String dadosDaAeronave() {
+        return "AERONAVE:\nCor: " + getCor() +
+                "Modelo: " + getModelo() +
+                "Assa fixa: :" + (isAsaFixa() ? "sim" : "Não") +
+                "Capacidade de combustivel: " + getCapacidadeCombustivel() +
+                "Capacidade de passageiros: " + getCapacidadePassageiros() +
+                "Id ultimo mecado responsavel: " + getUltimoMecanicoResponsavel().getId() +
+                "Ultimo mecanico responavel: " + getUltimoMecanicoResponsavel().getNome() +
+                "MOTOR: " + motor.toString();
+
     }
 
 }
