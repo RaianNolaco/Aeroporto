@@ -1,3 +1,5 @@
+package Aeronave;
+
 // um vôo é sempre entre dois aeroportos(origem e destino)
 
 // Cada vôo possui um número que o identifica.
@@ -17,6 +19,7 @@
 // ser utilizada.
 
 import Aeroporto.Aeroporto;
+import Pessoas.Tripulacao;
 
 public class Voo {
     private int id;

@@ -1,3 +1,4 @@
+package Intalacoes;
 
 // Desse modo, o objeto Pista necessita informações do Radar para que seja escolhida a pista adequada
 

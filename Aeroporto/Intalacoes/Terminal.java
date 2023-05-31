@@ -1,3 +1,4 @@
+package Intalacoes;
 
 public class Terminal {
     private int id;

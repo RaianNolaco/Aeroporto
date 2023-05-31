@@ -1,3 +1,5 @@
+package Aeronave;
+
 public class Aviao extends Aeronave {
 
     private boolean asaFixa;
